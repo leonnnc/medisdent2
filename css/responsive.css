@@ -1,0 +1,284 @@
+/* ========== RESPONSIVE ========== */
+
+/* Tablets (768px y menos) */
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+
+    /* Secciones */
+    section h2 {
+        font-size: 2rem;
+    }
+
+    /* Carrusel */
+    .carrusel-hero {
+        height: 350px;
+    }
+
+    .carrusel-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .carrusel-text p {
+        font-size: 1rem;
+    }
+
+    .carrusel-prev,
+    .carrusel-next {
+        padding: 10px 15px;
+        font-size: 1.2rem;
+    }
+
+    /* Misión y Visión */
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Servicios */
+    .servicios-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    /* Staff */
+    .staff-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    /* Citas */
+    .citas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-cita {
+        padding: 30px;
+    }
+
+    /* Contacto */
+    .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .mapa {
+        height: 300px;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    /* Popup */
+    .popup-promocion {
+        width: 90%;
+        left: 5%;
+        right: auto;
+        bottom: 20px;
+    }
+
+    .popup-promocion.show {
+        right: auto;
+    }
+}
+
+/* Móviles (480px y menos) */
+@media (max-width: 480px) {
+    /* Navbar */
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-brand h1 {
+        font-size: 1.3rem;
+    }
+
+    /* Secciones */
+    section {
+        padding: 50px 0;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    section h2::after {
+        width: 60px;
+    }
+
+    /* Carrusel */
+    .carrusel-hero {
+        height: 280px;
+    }
+
+    .carrusel-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .carrusel-text p {
+        font-size: 0.9rem;
+    }
+
+    .carrusel-prev,
+    .carrusel-next {
+        padding: 8px 12px;
+        font-size: 1rem;
+        left: 10px;
+    }
+
+    .carrusel-next {
+        right: 10px;
+        left: auto;
+    }
+
+    .carrusel-dots {
+        bottom: 15px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .dot.active {
+        width: 20px;
+    }
+
+    /* Misión y Visión */
+    .mv-card {
+        padding: 25px;
+    }
+
+    .mv-icon {
+        font-size: 2.5rem;
+    }
+
+    .mv-card h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Servicios */
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio-img {
+        height: 150px;
+    }
+
+    /* Staff */
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .staff-card-img {
+        height: 250px;
+    }
+
+    /* Citas */
+    .citas-container {
+        gap: 30px;
+    }
+
+    .form-cita {
+        padding: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Contacto */
+    .info-item {
+        gap: 15px;
+    }
+
+    .info-item .icon {
+        font-size: 1.5rem;
+    }
+
+    .mapa {
+        height: 250px;
+    }
+
+    /* Botones */
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    .modal-close {
+        right: 15px;
+        top: 15px;
+    }
+
+    /* Popup */
+    .popup-promocion {
+        width: 90%;
+        left: 5%;
+        bottom: 15px;
+    }
+
+    .popup-titulo {
+        font-size: 1rem;
+    }
+
+    .popup-descuento {
+        font-size: 1.5rem;
+    }
+}
+
+/* Muy pequeños (320px y menos) */
+@media (max-width: 320px) {
+    .nav-brand h1 {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    .carrusel-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .carrusel-text p {
+        font-size: 0.8rem;
+    }
+
+    .mv-card {
+        padding: 15px;
+    }
+
+    .mv-icon {
+        font-size: 2rem;
+    }
+
+    .staff-card-content {
+        padding: 15px;
+    }
+
+    .form-cita {
+        padding: 15px;
+    }
+}
